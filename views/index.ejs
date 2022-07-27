@@ -1,0 +1,18 @@
+<%- include('./layout/header.ejs')%>
+
+    <body>
+        <h1>Hello EJS</h1>
+        <h2>
+            <%= awesome %>
+        </h2>
+
+        <% for(let title of data){%>
+            <p>
+                <%= title.title %>
+            </p>
+            <% }%>
+
+
+
+    </body>
+    <%- include('./layout/footer.ejs')%>
